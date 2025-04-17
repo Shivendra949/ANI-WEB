@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Collection - AnimeGalaxy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">AG</span>
+                    <span class="logo-text">AnimeGalaxy</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="anime.html" class="active">Anime</a></li>
+                    <li><a href="manga.html">Manga</a></li>
+                    <li><a href="#">New Releases</a></li>
+                    <li><a href="#">Popular</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search anime or manga...">
+                    <button class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </button>
+                </div>
+                <button class="sign-in-btn">Sign In</button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="anime.html" class="active">Anime</a></li>
+            <li><a href="manga.html">Manga</a></li>
+            <li><a href="#">New Releases</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Sign In</a></li>
+        </ul>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Anime Collection</h1>
+            <p>Browse our extensive collection of high-quality anime</p>
+            
+            <div class="filter-section">
+                <div class="search-filter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="search" placeholder="Search anime by title, genre, or studio...">
+                </div>
+                <div class="filter-options">
+                    <select class="filter-select">
+                        <option value="">Genre</option>
+                        <option value="action">Action</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="drama">Drama</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="horror">Horror</option>
+                        <option value="romance">Romance</option>
+                    </select>
+                    
+                    <select class="filter-select">
+                        <option value="">Season</option>
+                        <option value="winter-2023">Winter 2023</option>
+                        <option value="spring-2023">Spring 2023</option>
+                        <option value="summer-2023">Summer 2023</option>
+                        <option value="fall-2023">Fall 2023</option>
+                        <option value="winter-2024">Winter 2024</option>
+                        <option value="spring-2024">Spring 2024</option>
+                    </select>
+                    
+                    <button class="filter-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+                        More Filters
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="anime-tabs">
+            <div class="tab-header">
+                <button class="tab-btn active" data-tab="all">All Anime</button>
+                <button class="tab-btn" data-tab="airing">Currently Airing</button>
+                <button class="tab-btn" data-tab="upcoming">Upcoming</button>
+                <button class="tab-btn" data-tab="popular">Most Popular</button>
+            </div>
+            
+            <div class="tab-content active" id="all-tab">
+                <div class="anime-collection-grid" id="all-anime-grid">
+                    <!-- Anime cards will be generated by JavaScript -->
+                </div>
+                <div class="load-more">
+                    <button class="btn btn-outline-purple">Load More</button>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="airing-tab">
+                <div class="anime-collection-grid" id="airing-anime-grid">
+                    <!-- Airing anime cards will be generated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="tab-content" id="upcoming-tab">
+                <div class="anime-collection-grid" id="upcoming-anime-grid">
+                    <!-- Upcoming anime cards will be generated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="tab-content" id="popular-tab">
+                <div class="anime-collection-grid" id="popular-anime-grid">
+                    <!-- Popular anime cards will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> AnimeGalaxy. All rights reserved. This is a demo website for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

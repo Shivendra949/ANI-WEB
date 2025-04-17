@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga Collection - AnimeGalaxy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">AG</span>
+                    <span class="logo-text">AnimeGalaxy</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="anime.html">Anime</a></li>
+                    <li><a href="manga.html" class="active">Manga</a></li>
+                    <li><a href="#">New Releases</a></li>
+                    <li><a href="#">Popular</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search anime or manga...">
+                    <button class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </button>
+                </div>
+                <button class="sign-in-btn">Sign In</button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="anime.html">Anime</a></li>
+            <li><a href="manga.html" class="active">Manga</a></li>
+            <li><a href="#">New Releases</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Sign In</a></li>
+        </ul>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Manga Collection</h1>
+            <p>Browse our extensive collection of high-quality manga</p>
+            
+            <div class="filter-section">
+                <div class="search-filter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="search" placeholder="Search manga by title, genre, or author...">
+                </div>
+                <div class="filter-options">
+                    <select class="filter-select">
+                        <option value="">Genre</option>
+                        <option value="action">Action</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="drama">Drama</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="horror">Horror</option>
+                        <option value="romance">Romance</option>
+                    </select>
+                    
+                    <select class="filter-select">
+                        <option value="">Status</option>
+                        <option value="ongoing">Ongoing</option>
+                        <option value="completed">Completed</option>
+                        <option value="hiatus">On Hiatus</option>
+                        <option value="cancelled">Cancelled</option>
+                    </select>
+                    
+                    <button class="filter-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+                        More Filters
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="manga-tabs">
+            <div class="tab-header">
+                <button class="tab-btn active" data-tab="all">All Manga</button>
+                <button class="tab-btn" data-tab="new">New Chapters</button>
+                <button class="tab-btn" data-tab="popular">Most Popular</button>
+                <button class="tab-btn" data-tab="completed">Completed</button>
+            </div>
+            
+            <div class="tab-content active" id="all-manga-tab">
+                <div class="manga-collection-grid" id="all-manga-grid">
+                    <!-- Manga cards will be generated by JavaScript -->
+                </div>
+                <div class="load-more">
+                    <button class="btn btn-outline-pink">Load More</button>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="new-manga-tab">
+                <div class="manga-collection-grid" id="new-manga-grid">
+                    <!-- New manga cards will be generated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="tab-content" id="popular-manga-tab">
+                <div class="manga-collection-grid" id="popular-manga-grid">
+                    <!-- Popular manga cards will be generated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="tab-content" id="completed-manga-tab">
+                <div class="manga-collection-grid" id="completed-manga-grid">
+                    <!-- Completed manga cards will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> AnimeGalaxy. All rights reserved. This is a demo website for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

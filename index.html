@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeGalaxy - High Quality Anime & Manga</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">AG</span>
+                    <span class="logo-text">AnimeGalaxy</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="anime.html">Anime</a></li>
+                    <li><a href="manga.html">Manga</a></li>
+                    <li><a href="#">New Releases</a></li>
+                    <li><a href="#">Popular</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search anime or manga...">
+                    <button class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </button>
+                </div>
+                <button class="sign-in-btn">Sign In</button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="anime.html">Anime</a></li>
+            <li><a href="manga.html">Manga</a></li>
+            <li><a href="#">New Releases</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Sign In</a></li>
+        </ul>
+    </div>
+
+    <section class="hero-section">
+        <div class="hero-slider" id="heroSlider">
+            <div class="hero-slide active" data-index="0">
+                <div class="hero-image" style="background-image: url('https://via.placeholder.com/1200x600/1a1a2e/ffffff?text=Demon+Slayer')"></div>
+                <div class="hero-content container">
+                    <h1>Demon Slayer: Kimetsu no Yaiba</h1>
+                    <p>A boy raised by boars, who wears a boar's head, boards the Infinity Train on a new mission.</p>
+                    <div class="hero-genres">
+                        <span>Action</span>
+                        <span>Fantasy</span>
+                        <span>Adventure</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                            Watch Now
+                        </button>
+                        <button class="btn btn-outline">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                            More Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" data-index="1">
+                <div class="hero-image" style="background-image: url('https://via.placeholder.com/1200x600/1a1a2e/ffffff?text=Attack+on+Titan')"></div>
+                <div class="hero-content container">
+                    <h1>Attack on Titan: Final Season</h1>
+                    <p>As war breaks out, Eren and his friends are forced to face the consequences of their actions.</p>
+                    <div class="hero-genres">
+                        <span>Action</span>
+                        <span>Drama</span>
+                        <span>Fantasy</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                            Watch Now
+                        </button>
+                        <button class="btn btn-outline">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                            More Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" data-index="2">
+                <div class="hero-image" style="background-image: url('https://via.placeholder.com/1200x600/1a1a2e/ffffff?text=Jujutsu+Kaisen')"></div>
+                <div class="hero-content container">
+                    <h1>Jujutsu Kaisen</h1>
+                    <p>A boy swallows a cursed talisman - the finger of a demon - and becomes cursed himself.</p>
+                    <div class="hero-genres">
+                        <span>Action</span>
+                        <span>Supernatural</span>
+                        <span>Horror</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                            Watch Now
+                        </button>
+                        <button class="btn btn-outline">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                            More Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-dots">
+                <span class="hero-dot active" data-index="0"></span>
+                <span class="hero-dot" data-index="1"></span>
+                <span class="hero-dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="latest-updates">
+            <div class="section-header">
+                <h2>Latest Updates</h2>
+                <div class="update-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <span>Auto-updated 5 minutes ago</span>
+                </div>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab-header">
+                    <button class="tab-btn active" data-tab="anime">Anime</button>
+                    <button class="tab-btn" data-tab="manga">Manga</button>
+                </div>
+                <div class="tab-content active" id="anime-tab">
+                    <div class="anime-grid">
+                        <!-- Anime cards will be generated by JavaScript -->
+                    </div>
+                    <div class="view-more">
+                        <button class="btn btn-outline-purple">View More</button>
+                    </div>
+                </div>
+                <div class="tab-content" id="manga-tab">
+                    <div class="manga-grid">
+                        <!-- Manga cards will be generated by JavaScript -->
+                    </div>
+                    <div class="view-more">
+                        <button class="btn btn-outline-pink">View More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trending-now">
+            <div class="section-header">
+                <h2>Trending Now</h2>
+                <div class="trending-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                    <span>Hot this week</span>
+                </div>
+            </div>
+            
+            <div class="trending-grid">
+                <!-- Trending cards will be generated by JavaScript -->
+            </div>
+        </section>
+
+        <section class="popular-manga">
+            <div class="section-header">
+                <h2>Popular Manga</h2>
+                <a href="manga.html" class="view-all">View all</a>
+            </div>
+            
+            <div class="popular-manga-grid">
+                <!-- Popular manga cards will be generated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">AG</span>
+                        <span class="logo-text">AnimeGalaxy</span>
+                    </a>
+                    <p>Your ultimate destination for high-quality anime and manga content, automatically updated with the latest releases.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="anime.html">Anime</a></li>
+                        <li><a href="manga.html">Manga</a></li>
+                        <li><a href="#">New Releases</a></li>
+                        <li><a href="#">Popular</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">DMCA</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get notified about new anime and manga releases.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> AnimeGalaxy. All rights reserved. This is a demo website for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
